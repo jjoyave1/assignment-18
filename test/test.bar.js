@@ -1,13 +1,59 @@
 describe("Bar", function() {
-  var bar;
+var bar;
 
-  beforeEach(function() {
-    bar = new Bar();
+beforeEach(function() {
+  bar = new Bar();
+});
+
+
+describe('squared', function() {
+
+  it('should square a number', function() {
+    expect(bar.squared(2)).to.equal(4);
   });
 
-  describe("squared", function (){
-    it("is a method", function (){
-      expect(typeof bar.squared).eq("function");
-    });
+});
+
+describe('cubed', function() {
+  it('should cube a number', function() {
+    expect(bar.cubed(3)).to.equal(27);
   });
-}
+
+});
+
+
+
+describe('exponentOf', function() {
+  it('should return a number raised to given exponent', function() {
+    var square = bar.exponentOf(2);
+    expect(square(2)).to.equal(4);
+
+  });
+});
+
+
+describe('reverseString', function() {
+  it('should reverse a string', function() {
+    expect(bar.reverseString('string')).to.equal('gnirts');
+  });
+});
+
+
+describe('cipher', function() {
+  it('should cipher a string', function() {
+    expect(bar.cipher('DAD')).to.equal('¨¥¨');
+  });
+});
+
+describe('decipher', function() {
+  it('should decipher a string', function() {
+    expect(bar.decipher('¨¥¨')).to.equal('DAD');
+  });
+});
+
+
+describe('rot13', function() {
+  it('should turn a sentence into a character code string', function() {
+    expect(bar.rot13('i want a popsicle')).to.equal('v jnag n cbcfvpyr');
+  });
+});

@@ -52,7 +52,7 @@ gulp.task('webserver', function() {
 //================================================
 
 gulp.task('hint:js', function() {
-  return gulp.src(['./app/js/*.js', '!./app/js/templates.js', '!./app/js/vendor/*'])
+  return gulp.src(['./app/js/*.js', '!./app/js/templates.js', '!./app/js/vendor/*', '!./test/test.foo.js'])
     .pipe(notifyError())
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
