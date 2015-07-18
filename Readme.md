@@ -1,15 +1,20 @@
-## Welcome to My Repo
 
-> I am your Readme.md file, you should probably update me.
+The following is a demonstration of testing using Mocha and Chai testing syntax.
+
+### Learning Objectives
+
+* Understand BDD
+* Know how to write tests
+* Know how to implement a spec
+
+## Details
+
+Testing output can be read in the console of the index page.
 
 
-## Usage
+## Resources
 
-This template contains some simple `gulp` tasks. They are as follows:
-
-
-- `gulp watch`: This will launch a Node Server and start the standard `watchlist` task
-- `gulp bower`: This will move the bower components into their proper location. This will run during the `watch` task, but you may need to run it manually once in a while
-- `gulp handlebars`: This will compile your handlebars (`.hbs`) files for you. Again, `watch` will watch for changes, but if you add new files, you'll need to run this or restart the `gulp watch` command.
-
-There are many more tasks, and you really should read through the `gulpfile.js`, but the ones above will take care of you in most cases.
+* [Mocha](http://mochajs.org/)
+* [Mocha in Browser](http://mochajs.org/#browser-support)
+* [Chai](http://chaijs.com/)
+* [Chai BDD API](http://chaijs.com/api/bdd/)
